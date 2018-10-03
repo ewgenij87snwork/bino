@@ -1,6 +1,204 @@
-// done by riverco.de
 @import helpers/all
 @import generated/sprite-svg
 @import common
 @import layouts
 @import main
+
+body
+	font-family: 'Open Sans', sans
+	color: #FFF 
+.container
+	width: 1055px
+	margin: 0 auto
+
+.wrap
+	height: 931px
+	width: 100%
+	display: flex
+	justify-content: space-between 
+	flex-direction: column
+	position: relative
+	// z-index: -1
+	&:before
+		content: "" 
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		height: 931px
+		background: rgba(#000, .8)
+		
+
+.header
+	z-index: 1
+	margin-bottom: 187px
+	porel
+	.container
+		display: flex
+		flex-direction: row
+		justify-content: space-between 
+		height: 100px
+		align-items: baseline 
+		padding-top: 20px
+
+.logo-white
+	display: inline-block
+	background: #FFF 
+	color: #000
+	float: left
+.logo
+	text-transform: uppercase
+	border: 3px solid #fff
+	+clr
+	// padding: 30px 30px
+	line-height: .9
+	margin-right: 100px
+	font-size: 32px
+	h4
+		display: inline-block
+		float: left
+		padding: 5px
+		font-weight: 300 
+
+.header
+	nav
+		ul
+			font-size: 13px
+			text-transform: uppercase
+			li
+				display: inline-block
+				margin-left: 45px
+				a
+					font-family: 'Open Sans', sans
+					text-decoration: none
+					color: #FFF
+
+.section
+	margin: 0 auto
+	position: relative
+	flex: 1
+	text-align: center
+	&__suptitle
+		text-align: center
+		font-size: 18px
+		margin-bottom: 18px
+	&__title
+		margin: 0 auto
+		font-size: 63px
+		font-weight: bold 
+		position: relative
+		display: inline-block
+		padding-bottom: 19px
+		margin-bottom: 50px
+		
+		&:before,&:after
+			// width: calc(50% - 40px)
+			width: 100px
+			height: 1px
+			background: #FFF 
+			position: absolute
+			content: "" 
+			bottom: -8px
+		&:before
+			left: 30%
+		&:after
+			right: 30%		
+	&__point
+		background: red
+		width: 5px
+		height: 5px
+		border-radius: 50%
+		position: absolute
+		bottom: -10px
+		left: 50%
+		transform: translate(-50%, 0)
+	&__text
+		width: 50%
+		font-size: 14px
+		margin: 0 auto
+		margin-bottom: 40px
+	&__btns
+		font-size: 14px
+		font-weight: bold 
+		width: 430px
+		display: flex
+		margin: 0 auto
+		justify-content: space-between 
+	&__btn
+		display: inline-block
+		line-height: 47px
+		border: 1px solid #fff
+		border-radius: 2px
+		width: 200px
+		cursor: pointer
+		text-decoration: none
+		color: #FFF 
+		transition: .25s ease-out
+		&:first-of-type
+			margin-right: 0
+		&:hover
+			background: red
+			border: 1px solid red
+			border-radius: 5px
+
+.anchor
+	flex: none
+	position: relative
+	height: 100px
+	width: 100%
+	box-sizing: border-box;
+	&:before,&:after
+		content: '' 
+		background: #FFF 
+		width: 40%
+		height: 80px
+		position: absolute
+		bottom: -20px
+		transform: skewY(3deg)
+	&:after
+		right: 0
+		transform: skewY(-3deg)
+		
+	&__chamfer
+		transform: skewY(8deg)
+		width: calc(50% + 50px)
+		position: absolute
+		height: 100px
+		top: -15px
+		bottom: -50px
+		background: #fff
+		height: 100%
+		z-index: 2
+	&__chamfer-right
+		transform: rotate(0deg) skewY(-8deg);
+		right: 0
+		
+	&__img
+		position: relative
+		margin: 0 auto
+		width: 65px
+		height: 65px
+		margin-top: -4px
+		&:before
+			content: '' 
+			position: absolute
+			width: 73px
+			height: 73px
+			left: -4px
+			top: -4px
+			border-radius: 50%
+			background: rgba(#ccc, .5) 
+			
+	&__img-inside
+		position: absolute
+		width: 100%
+		height: 100%
+		background: #FFF
+		border-radius: 50%
+		z-index: 10
+			
+		
+
+
+	
