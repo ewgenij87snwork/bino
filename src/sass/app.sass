@@ -8,7 +8,7 @@ body
 	font-family: 'Open Sans', sans
 	color: #FFF 
 .container
-	width: 1055px
+	width: 1050px
 	margin: 0 auto
 
 .wrap
@@ -18,7 +18,6 @@ body
 	justify-content: space-between 
 	flex-direction: column
 	position: relative
-	// z-index: -1
 	&:before
 		content: "" 
 		position: absolute
@@ -29,37 +28,39 @@ body
 		height: 931px
 		background: rgba(#000, .8)
 		
-
+//--------------------------------------------------------
+//--------------------------------------------------------
+//------------------Header's style------------------------
+//--------------------------------------------------------
+//--------------------------------------------------------
 .header
 	z-index: 1
-	margin-bottom: 187px
-	porel
+	margin-bottom: 120px
 	.container
 		display: flex
 		flex-direction: row
 		justify-content: space-between 
 		height: 100px
-		align-items: baseline 
-		padding-top: 20px
+		align-items: center 
+		padding-top: 30px
 
-.logo-white
-	display: inline-block
-	background: #FFF 
-	color: #000
-	float: left
 .logo
 	text-transform: uppercase
 	border: 3px solid #fff
-	+clr
-	// padding: 30px 30px
 	line-height: .9
 	margin-right: 100px
 	font-size: 32px
-	h4
+	&__part1,&__part2
+		padding: 7px
 		display: inline-block
-		float: left
-		padding: 5px
-		font-weight: 300 
+	&__part1
+		background: #FFF 
+		color: #000
+		font-weight: bold
+		padding: 7px 10px
+	&__part2
+		padding-left: 0px
+		padding-right: 10px
 
 .header
 	nav
@@ -69,11 +70,25 @@ body
 			li
 				display: inline-block
 				margin-left: 45px
+				position: relative
+
+				box-sizing: border-box
 				a
 					font-family: 'Open Sans', sans
 					text-decoration: none
 					color: #FFF
-
+					border-bottom: 1px solid transparent
+					&:hover,&:active
+						padding-bottom: 15px
+						border-bottom: 1px solid red
+						color: red
+						text-shadow: 0 0 1px red, 0 0 1px red, 0 0 1px red
+						
+//--------------------------------------------------------
+//--------------------------------------------------------
+//------------------Section's style------------------------
+//--------------------------------------------------------
+//--------------------------------------------------------
 .section
 	margin: 0 auto
 	position: relative
@@ -90,10 +105,8 @@ body
 		position: relative
 		display: inline-block
 		padding-bottom: 19px
-		margin-bottom: 50px
-		
+		margin-bottom: 50px	
 		&:before,&:after
-			// width: calc(50% - 40px)
 			width: 100px
 			height: 1px
 			background: #FFF 
@@ -141,7 +154,11 @@ body
 			background: red
 			border: 1px solid red
 			border-radius: 5px
-
+//--------------------------------------------------------
+//--------------------------------------------------------
+//------------------Footer's style------------------------
+//--------------------------------------------------------
+//--------------------------------------------------------
 .anchor
 	flex: none
 	position: relative
@@ -158,8 +175,7 @@ body
 		transform: skewY(3deg)
 	&:after
 		right: 0
-		transform: skewY(-3deg)
-		
+		transform: skewY(-3deg)	
 	&__chamfer
 		transform: skewY(8deg)
 		width: calc(50% + 50px)
@@ -172,8 +188,7 @@ body
 		z-index: 2
 	&__chamfer-right
 		transform: rotate(0deg) skewY(-8deg);
-		right: 0
-		
+		right: 0	
 	&__img
 		position: relative
 		margin: 0 auto
@@ -188,8 +203,7 @@ body
 			left: -4px
 			top: -4px
 			border-radius: 50%
-			background: rgba(#ccc, .5) 
-			
+			background: rgba(#ccc, .5) 		
 	&__img-inside
 		position: absolute
 		width: 100%
