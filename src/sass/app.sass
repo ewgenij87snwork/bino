@@ -8,8 +8,12 @@ body
 	font-family: 'Open Sans', sans
 	color: #FFF 
 .container
-	width: 1050px
+	max-width: 1050px
 	margin: 0 auto
+	+r(1080) 
+		padding-left: 30px 
+		padding-right: 30px 
+	
 
 .wrap
 	height: 931px
@@ -43,13 +47,20 @@ body
 		height: 100px
 		align-items: center 
 		padding-top: 30px
+		+r(800) 
+			flex-direction: column
+		
 
 .logo
 	text-transform: uppercase
 	border: 3px solid #fff
 	line-height: .9
-	margin-right: 100px
+	margin-right: 20px
 	font-size: 32px
+	min-width: 145px
+	+r(800)
+		margin-bottom: 30px
+		margin-right: 0
 	&__part1,&__part2
 		padding: 7px
 		display: inline-block
@@ -60,7 +71,7 @@ body
 		padding: 7px 10px
 	&__part2
 		padding-left: 0px
-		padding-right: 10px
+		padding-right: 0px
 
 .header
 	nav
@@ -70,6 +81,13 @@ body
 			li
 				display: inline-block
 				margin-left: 45px
+				+r(940) 
+					margin-left: 25px
+					padding-bottom: 15px
+				+r(800) 
+					margin: 10px
+				
+				
 
 				box-sizing: border-box
 				a
@@ -78,7 +96,7 @@ body
 					color: #FFF
 					border-bottom: 1px solid transparent
 					&:hover,&:active
-						padding-bottom: 15px
+						padding-bottom: 5px
 						border-bottom: 1px solid red
 						color: red
 						text-shadow: 0 0 1px red, 0 0 1px red, 0 0 1px red
@@ -106,16 +124,16 @@ body
 		padding-bottom: 19px
 		margin-bottom: 50px	
 		&:before,&:after
-			width: 100px
-			height: 1px
+			width: 35%
+			height: 2px
 			background: #FFF 
 			position: absolute
 			content: "" 
 			bottom: -8px
 		&:before
-			left: 30%
+			left: 10%
 		&:after
-			right: 30%		
+			right: 10%		
 	&__point
 		background: red
 		width: 5px
@@ -130,6 +148,7 @@ body
 		font-size: 14px
 		margin: 0 auto
 		margin-bottom: 40px
+		line-height: 2
 	&__btns
 		font-size: 14px
 		font-weight: bold 
