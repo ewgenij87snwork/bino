@@ -2,6 +2,7 @@
 @import generated/sprite-svg
 @import common
 @import layouts
+@import burger
 @import main
 
 body
@@ -87,6 +88,9 @@ body
 		ul
 			font-size: 13px
 			text-transform: uppercase
+			+r(864) 
+				margin-top: 80px
+			
 			li
 				display: inline-block
 				margin-left: 45px
@@ -94,19 +98,25 @@ body
 				+r(940) 
 					margin-left: 25px
 					padding-bottom: 15px
-				+r(800) 
-					margin: 10px
+				+r(864) 
+					display: block
+					padding-bottom: 5px
+					
 				a
 					text-align: center
 					font-family: 'Open Sans', sans
 					text-decoration: none
 					color: #FFF
-					border-bottom: 1px solid transparent
+					border-bottom: 2px solid transparent
+					transition: .4s
+					padding-bottom: 5px
 					&:hover,&:active
 						padding-bottom: 5px
-						border-bottom: 1px solid red
+						border-bottom: 2px solid red
 						color: red
-						text-shadow: 0 0 1px red, 0 0 1px red, 0 0 1px red
+						
+						
+						
 						
 
 
