@@ -25,8 +25,9 @@
 	    height: 100%;
 	    z-index: -1;
 	    background: rgba(0,0,0, .35);
-	    opacity: 0;
+	    // opacity: 0;
 	    transition: all .8s ease;
+	    display: none
 	      
 	.header__menu ul 
 	    position: absolute;
@@ -84,7 +85,8 @@
 
 	.nav-btn 
 		position: fixed;
-		right: 10px;
+		// right: 10px;
+	
 		top: 10px;
 		display: block;
 		width: 48px;
@@ -142,6 +144,8 @@
 #nav:checked ~ .header__menu 
       z-index: 9990;
       opacity: 1;
+      display: block
+      
 
 
 #nav:checked ~ .header__menu ul li a 

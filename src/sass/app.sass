@@ -154,6 +154,10 @@ body
 			left: 10%
 		&:after
 			right: 10%		
+		+r(500) 
+			font-size: 2rem
+			width: 80%
+		
 	&__point
 		background: red
 		width: 5px
@@ -169,6 +173,9 @@ body
 		margin: 0 auto
 		margin-bottom: 40px
 		line-height: 2
+		+r(800) 
+			width: 70%
+		
 	&__btns
 		font-size: 14px
 		font-weight: bold 
@@ -176,6 +183,11 @@ body
 		display: flex
 		margin: 0 auto
 		justify-content: space-between 
+		margin-bottom: 50px
+		+r(500) 
+			flex-direction: column
+			align-items: center
+		
 	&__btn
 		display: inline-block
 		line-height: 47px
@@ -192,65 +204,69 @@ body
 			background: red
 			border: 1px solid red
 			border-radius: 5px
+		+r(600) 
+			margin-bottom: 30px
+			
+		
 //--------------------------------------------------------
 //--------------------------------------------------------
 //------------------Footer's style------------------------
 //--------------------------------------------------------
 //--------------------------------------------------------
-.anchor
-	flex: none
-	position: relative
-	height: 100px
-	width: 100%
-	box-sizing: border-box;
-	&:before,&:after
-		content: '' 
-		background: #FFF 
-		width: 40%
-		height: 80px
-		position: absolute
-		bottom: -20px
-		transform: skewY(3deg)
-	&:after
-		right: 0
-		transform: skewY(-3deg)	
-	&__chamfer
-		transform: skewY(8deg)
-		width: calc(50% + 50px)
-		position: absolute
-		height: 100px
-		top: -15px
-		bottom: -50px
-		background: #fff
-		height: 100%
-		z-index: 2
-	&__chamfer-right
-		transform: rotate(0deg) skewY(-8deg);
-		right: 0	
-	&__img
-		position: relative
-		margin: 0 auto
-		width: 65px
-		height: 65px
-		margin-top: -4px
-		&:before
-			content: '' 
-			position: absolute
-			width: 73px
-			height: 73px
-			left: -4px
-			top: -4px
-			border-radius: 50%
-			background: rgba(#ccc, .5) 		
-	&__img-inside
-		position: absolute
-		width: 100%
-		height: 100%
-		background: #FFF
-		border-radius: 50%
-		z-index: 10
+// .anchor
+// 	flex: none
+// 	position: relative
+// 	height: 100px
+// 	width: 100%
+// 	box-sizing: border-box;
+// 	&:before,&:after
+// 		content: '' 
+// 		background: #FFF 
+// 		width: 40%
+// 		height: 80px
+// 		position: absolute
+// 		bottom: -20px
+// 		transform: skewY(3deg)
+// 	&:after
+// 		right: 0
+// 		transform: skewY(-3deg)	
+// 	&__chamfer
+// 		transform: skewY(8deg)
+// 		width: calc(50% + 50px)
+// 		position: absolute
+// 		height: 100px
+// 		top: -15px
+// 		bottom: -50px
+// 		background: #fff
+// 		height: 100%
+// 		z-index: 2
+// 	&__chamfer-right
+// 		transform: rotate(0deg) skewY(-8deg);
+// 		right: 0	
+// 	&__img
+// 		position: relative
+// 		margin: 0 auto
+// 		width: 65px
+// 		height: 65px
+// 		margin-top: -4px
+// 		&:before
+// 			content: '' 
+// 			position: absolute
+// 			width: 73px
+// 			height: 73px
+// 			left: -4px
+// 			top: -4px
+// 			border-radius: 50%
+// 			background: rgba(#ccc, .5) 		
+// 	&__img-inside
+// 		position: absolute
+// 		width: 100%
+// 		height: 100%
+// 		background: #FFF
+// 		border-radius: 50%
+// 		z-index: 10
 			
 		
 
 
-	
+// 	
