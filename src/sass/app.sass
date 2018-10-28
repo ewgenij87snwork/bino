@@ -39,9 +39,8 @@ body
 //--------------------------------------------------------
 //--------------------------------------------------------
 .header
-	z-index: 1
+	z-index: 1000
 	margin-bottom: 5%
-	
 	position: relative
 	+r(1000) 
 		margin-bottom: 10%
@@ -84,14 +83,9 @@ body
 
 .header
 	nav
-		// margin-bottom: 150px
 		ul
 			font-size: 13px
-			text-transform: uppercase
-			
-			// +r(864) 
-			// 	margin-top: 80px
-			
+			text-transform: uppercase	
 			li
 				display: inline
 				margin-left: 45px
@@ -99,10 +93,6 @@ body
 				+r(940) 
 					margin-left: 25px
 					padding-bottom: 15px
-				// +r(864) 
-				// 	display: block
-				// 	padding-bottom: 5px
-					
 				a
 					text-align: center
 					font-family: 'Open Sans', sans
@@ -264,7 +254,7 @@ body
 			background: rgba(#ccc, .5)
 			z-index: 29 	
 			left: 50%
-			transform: translate(-50%, calc(3vw - 50px))	
+			transform: translate(-50%, calc(2.9vw - 50px))	
 	&__img-inside
 		position: absolute
 		width: 65px

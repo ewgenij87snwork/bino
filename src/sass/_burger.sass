@@ -20,36 +20,39 @@
 	.header__menu 
 		position: fixed;
 		top: 70px	
-		left: 0;
-		width: 100%;
+		right: 0;
+		width: 0%;
 		height: 50vh;
 		z-index: -1;
-		transition: all .3s ease;
-		display: none
+
+		display: block
+		
+		// display: none
+		opacity: 0
 		
 	.header__menu ul 
 		position: absolute;
 		top: 10vh
 		right: 0
-		background: linear-gradient(to left, rgba(0,0,0, .85) 50%, transparent)
-
+		padding-left: 40px
+		background: linear-gradient(to left, rgba(0,0,0, .85) 70%, transparent)
+		
 	.header__menu ul li 
 		text-align: right;
-	
+		
 	.header
 		nav
-			ul 
-				transition: 1.2s
-				
+			ul 				
 				li 
 					a
-						padding: 5px 5px 5px 24px;
+						padding: 15px;
 						opacity: 0;
 						font-size: 16px;
 						font-weight: 600;
 						letter-spacing: 1.2px;
 						transition: all 0.2s ease;
-						display: inline-block
+						display: none
+						
 
 	.header__menu ul li:not(:first-child) 
 		margin-left: 0;
@@ -65,7 +68,8 @@
 		z-index: 9999;
 		border-radius: 50%;
 		background: radial-gradient(rgba(255,255,255, .6) 10%, transparent 60%)
-
+		// transition: .9s
+		
 	.nav-btn i 
 		display: block;
 		width: 20px;
@@ -101,19 +105,17 @@
 #nav:checked + .nav-btn i:nth-child(3) 
 	transform: translateY(-6px) rotate(90deg);
 
-#nav:checked ~ .header__menu 	
-	z-index: 9990;
+#nav:checked ~ .header__menu 
 	opacity: 1;
-	display: block
-	
+	transition: all 1.3s ease;
 #nav:checked ~ .header__menu ul li
-	
 	display: block
 	padding: 5px
 	
 #nav:checked ~ .header__menu ul li a 
 	transition: 1.2s ease
 	opacity: 1;
+	display: block
 	transform: translateX(0);
 
 .hidden 
