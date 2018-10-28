@@ -88,8 +88,8 @@ body
 		ul
 			font-size: 13px
 			text-transform: uppercase
-			+r(864) 
-				margin-top: 80px
+			// +r(864) 
+			// 	margin-top: 80px
 			
 			li
 				display: inline-block
@@ -98,9 +98,9 @@ body
 				+r(940) 
 					margin-left: 25px
 					padding-bottom: 15px
-				+r(864) 
-					display: block
-					padding-bottom: 5px
+				// +r(864) 
+				// 	display: block
+				// 	padding-bottom: 5px
 					
 				a
 					text-align: center
@@ -108,10 +108,8 @@ body
 					text-decoration: none
 					color: #FFF
 					border-bottom: 2px solid transparent
-					transition: .4s
-					padding-bottom: 5px
+					// transition: .4s
 					&:hover,&:active
-						padding-bottom: 5px
 						border-bottom: 2px solid red
 						color: red
 						
@@ -213,60 +211,68 @@ body
 //------------------Footer's style------------------------
 //--------------------------------------------------------
 //--------------------------------------------------------
-// .anchor
-// 	flex: none
-// 	position: relative
-// 	height: 100px
-// 	width: 100%
-// 	box-sizing: border-box;
-// 	&:before,&:after
-// 		content: '' 
-// 		background: #FFF 
-// 		width: 40%
-// 		height: 80px
-// 		position: absolute
-// 		bottom: -20px
-// 		transform: skewY(3deg)
-// 	&:after
-// 		right: 0
-// 		transform: skewY(-3deg)	
-// 	&__chamfer
-// 		transform: skewY(8deg)
-// 		width: calc(50% + 50px)
-// 		position: absolute
-// 		height: 100px
-// 		top: -15px
-// 		bottom: -50px
-// 		background: #fff
-// 		height: 100%
-// 		z-index: 2
-// 	&__chamfer-right
-// 		transform: rotate(0deg) skewY(-8deg);
-// 		right: 0	
-// 	&__img
-// 		position: relative
-// 		margin: 0 auto
-// 		width: 65px
-// 		height: 65px
-// 		margin-top: -4px
-// 		&:before
-// 			content: '' 
-// 			position: absolute
-// 			width: 73px
-// 			height: 73px
-// 			left: -4px
-// 			top: -4px
-// 			border-radius: 50%
-// 			background: rgba(#ccc, .5) 		
-// 	&__img-inside
-// 		position: absolute
-// 		width: 100%
-// 		height: 100%
-// 		background: #FFF
-// 		border-radius: 50%
-// 		z-index: 10
+.anchor
+	flex: none
+	position: relative
+	height: 100px
+	width: 100%
+	box-sizing: border-box;
+	&:before,&:after
+		content: '' 
+		background: #FFF 
+		width: 40%
+		height: 80px
+		position: absolute
+		bottom: -20px
+		transform: skewY(3deg)
+	&:after
+		right: 0
+		transform: skewY(-3deg)	
+	&__chamfer
+		transform: skewY(8deg)
+		width: calc(50% + 50px)
+		position: absolute
+		height: 100px
+		top: -15px
+		bottom: -50px
+		background: #fff
+		height: 100%
+		z-index: 2
+	&__chamfer-right
+		transform: rotate(0deg) skewY(-8deg);
+		right: 0	
+	&__img
+		position: relative
+		margin: 0 auto
+		width: 65px
+		height: 65px
+		margin-top: -4px
+		&:before
+			content: '' 
+			position: absolute
+			width: 73px
+			height: 73px
+			left: -4px
+			top: -4px
+			border-radius: 50%
+			background: rgba(#ccc, .5) 		
+	&__img-inside
+		position: absolute
+		width: 100%
+		height: 100%
+		background: #FFF
+		border-radius: 50%
+		z-index: 10
 			
 		
 
 
-// 	
+
+
+
+
+
+
+
+
+
