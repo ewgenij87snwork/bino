@@ -39,6 +39,8 @@
 	.header
 		nav
 			ul 
+				transition: 1.2s
+				
 				li 
 					a
 						padding: 5px 5px 5px 24px;
@@ -99,16 +101,18 @@
 #nav:checked + .nav-btn i:nth-child(3) 
 	transform: translateY(-6px) rotate(90deg);
 
-#nav:checked ~ .header__menu 
+#nav:checked ~ .header__menu 	
 	z-index: 9990;
 	opacity: 1;
 	display: block
 	
 #nav:checked ~ .header__menu ul li
+	
 	display: block
 	padding: 5px
 	
 #nav:checked ~ .header__menu ul li a 
+	transition: 1.2s ease
 	opacity: 1;
 	transform: translateX(0);
 

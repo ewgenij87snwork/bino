@@ -46,7 +46,7 @@ body
 	+r(1000) 
 		margin-bottom: 10%
 	+r(600) 
-		margin-bottom: 30%
+		margin-bottom: 10%
 	
 	
 	.container
@@ -88,11 +88,12 @@ body
 		ul
 			font-size: 13px
 			text-transform: uppercase
+			
 			// +r(864) 
 			// 	margin-top: 80px
 			
 			li
-				display: inline-block
+				display: inline
 				margin-left: 45px
 				box-sizing: border-box
 				+r(940) 
@@ -108,7 +109,8 @@ body
 					text-decoration: none
 					color: #FFF
 					border-bottom: 2px solid transparent
-					// transition: .4s
+					// display: inline
+					transition: .25s
 					&:hover,&:active
 						border-bottom: 2px solid red
 						color: red
@@ -129,6 +131,9 @@ body
 	position: relative
 	flex: 1
 	text-align: center
+	.container
+		position: relative
+		width: 90vw
 	&__suptitle
 		text-align: center
 		font-size: 18px
@@ -151,9 +156,9 @@ body
 		&:before
 			left: 10%
 		&:after
-			right: 10%		
+			right: 10%	
 		+r(500) 
-			font-size: 2rem
+			font-size: 2.5rem
 			width: 80%
 		
 	&__point
@@ -172,12 +177,15 @@ body
 		margin-bottom: 40px
 		line-height: 2
 		+r(800) 
-			width: 70%
+			width: 80%
+		+r(600) 
+			width: 100%
+		
 		
 	&__btns
 		font-size: 14px
 		font-weight: bold 
-		width: 430px
+		max-width: 430px
 		display: flex
 		margin: 0 auto
 		justify-content: space-between 
