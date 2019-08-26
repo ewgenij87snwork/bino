@@ -18,7 +18,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 	border-left: none;
 	width: 65px;
 	height: 32px;
-	z-index: 10;
+	z-index: 1000;
 	padding-left: 5px;
 }
 
